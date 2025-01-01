@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA RNG Rumble</title>
+    <link rel="stylesheet" href="NBA.css">
+</head>
+<body>
+    <header>
+        <h1>NBA RNG Rumble</h1>
+        <p>Roll the dice to unlock legendary NBA players!</p>
+    </header>
+    
+    <main>
+        <section id="roll-section">
+            <button id="roll-button">Roll for Player</button>
+            <div id="result"></div>
+            <button id="inventory-button">Show Inventory</button>
+        </section>
+
+        <section id="team-section">
+            <h2>Your Team</h2>
+            <ul id="team-list"></ul>
+        </section>
+    </main>
+
+    <div id="inventory-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inventory</h2>
+            <ul id="inventory-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 NBA RNG Rumble. All rights reserved.</p>
+    </footer>
+
+    <script src="NBA.js"></script>
+</body>
+</html>

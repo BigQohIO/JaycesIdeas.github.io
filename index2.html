@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon's Money</title>
+</head>
+<body>
+    <!-- Button to go to the second page -->
+    <button onclick="window.location.href='https://bigqohio.github.io/elonmuskmoney.github.io/index.html'">Go to Spend Elon's Money</button>
+
+    <!-- Second page HTML (secondPage.html) -->
+    <script>
+        // This is the content for the second page
+        const secondPageContent = `
+            <h1>Welcome!</h1>
+            <button onclick="window.location.href='https://bigqohio.github.io/elonmuskmoney.github.io/index.html'">Spend Elon's Money!</button>
+        `;
+        
+        // Create second page
+        if (window.location.pathname.endsWith('https://bigqohio.github.io/elonmuskmoney.github.io/index.html')) {
+            document.body.innerHTML = secondPageContent;
+        }
+    </script>
+</body>
+</html>

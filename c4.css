@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px;
+}
+
+h1 {
+    color: #f0a500;
+}
+
+#turn {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#game-mode, #difficulty-level {
+    margin-bottom: 20px;
+}
+
+#game-mode button, #difficulty-level button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#game-mode button:hover, #difficulty-level button:hover {
+    background-color: #e08e00;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 70px);
+    grid-template-rows: repeat(6, 70px);
+    gap: 5px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    background-color: #222;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #e08e00;
+}

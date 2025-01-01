@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, green, purple); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4CAF50, #673AB7); /* Smooth gradient background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +12,9 @@ body {
 .container {
     text-align: center;
     background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -24,12 +24,13 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    font-size: 2em;
     color: #333;
+    font-size: 2.5em; /* Larger title font */
 }
 
 button {
-    padding: 12px 20px;
+    padding: 12px 24px;
+    margin: 10px; /* Space between buttons */
     border: none;
     border-radius: 8px;
     background-color: #007bff;
@@ -48,4 +49,22 @@ button:hover {
 }
 
 button:active {
-    transform: transla
+    transform: translateY(0); /* Reset position when button is pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    color: white; /* Change color for visibility */
+    font-size: 0.8em; /* Smaller font size */
+    opacity: 0.8; /* Slightly transparent */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.footer-text:hover {
+    text-decoration: underline; /* Underline on hover for feedback */
+    color: #ffcc00; /* Change color on hover */
+}
